@@ -22,7 +22,7 @@ public class DiscussPostMapperTest extends BrainlyApplicationTests {
     @Test
     public void selectDiscussPosts() {
 
-        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(3, 1, 10);
+        List<DiscussPost> discussPosts = discussPostMapper.selectDiscussPosts(0, 1, 10);
         for (DiscussPost discussPost : discussPosts) {
             System.out.println(discussPost);
         }
